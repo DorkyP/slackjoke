@@ -1,0 +1,25 @@
+{
+  "name": "slackjoke",
+  "version": "1.0.0",
+  "description": "A simple slackbot that tells hilarious jokes, all vetted by me.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DorkyP/slackjoke.git"
+  },
+  "keywords": [
+    "joke"
+  ],
+  "author": "Mark Pendergast",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1",
+    "slackbots": "^1.2.0"
+  }
+}

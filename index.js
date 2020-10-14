@@ -4,26 +4,17 @@ const fetch = require('node-fetch');
 const dotenv = require('dotenv');
 dotenv.config()
 
+var unirest = require("unirest");
+var req = unirest("GET", "https://dad-jokes.p.rapidapi.com/random/joke");
+req.headers({
+	"x-rapidapi-host": "dad-jokes.p.rapidapi.com",
+	"x-rapidapi-key": "cb33621b19mshf6e7efe351b4677p1b7210jsn074002be033d",
+	"useQueryString": true
+});
 
 const bot = new SlackBot({
     token: `${process.env.BOT_TOKEN}`,
     name: 'slackjokeclassic'
-})
-
-bot.on('start', () => {
-    const params = {
-        icon_emoji: ':laughing:'
-    }
-
-    bot.postMessageToChannel(
-        'asdf',
-        "I'm here!",
-        params
-    );
-})
-
-bot.on('error', (err) => {
-    console.log(err);
 })
 
 // Message Handler
@@ -35,23 +26,20 @@ bot.on('message', (data) => {
 })
 
 function handleMessage(message, channel) {
-    if(message.includes('inspire')) {
+    if(message.toLowerCase().includes('inspire me')) {
         inspireMe(channel)
-    } else if(message.includes('joke')) {
+    } else if(message.toLowerCase().includes('joke please')) {
         randomJoke(channel)
-    } else if(message.includes(' help')) {
-        runHelp()
     }
 }
 
 function randomJoke(channel) {
-    console.log("got here")
-    axios.get("https://raw.githubusercontent.com/DorkyP/slackjoke/main/jokes.json")
+    axios
+        .get('https://us-central1-dadsofunny.cloudfunctions.net/DadJokes/random/jokes', {
+            headers: { Accept: 'application/json' }})
         .then(res => {
-            const jokes = res.data;
-            const random = Math.floor(Math.random() * jokes.length);
-            const question = jokes[random].question
-            const answer = jokes[random].answer
+            const question = res.data.setup;
+            const answer = res.data.punchline;
 
             const params = {
                 icon_emoji: ':laughing:'
@@ -59,11 +47,10 @@ function randomJoke(channel) {
 
             bot.postMessage(
                 channel,
-                `${question}
-                ${answer} :joy:`,
-                params
+                `${question}\n\n${answer} :joy:`,
+                {icon_emoji: ':laughing:'}
             );
-        })
+        });
 }
 
 function inspireMe(channel) {

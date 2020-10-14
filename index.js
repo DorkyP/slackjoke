@@ -4,14 +4,6 @@ const fetch = require('node-fetch');
 const dotenv = require('dotenv');
 dotenv.config()
 
-var unirest = require("unirest");
-var req = unirest("GET", "https://dad-jokes.p.rapidapi.com/random/joke");
-req.headers({
-	"x-rapidapi-host": "dad-jokes.p.rapidapi.com",
-	"x-rapidapi-key": "cb33621b19mshf6e7efe351b4677p1b7210jsn074002be033d",
-	"useQueryString": true
-});
-
 const bot = new SlackBot({
     token: `${process.env.BOT_TOKEN}`,
     name: 'slackjokeclassic'

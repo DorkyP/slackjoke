@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/.bin" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/ajv" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/asn1" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/assert-plus" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/async-limiter" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/asynckit" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/aws-sign2" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/aws4" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/axios" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/bcrypt-pbkdf" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/caseless" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/combined-stream" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/core-util-is" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/dashdash" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/delayed-stream" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/dotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/ecc-jsbn" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/extend" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/extsprintf" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/fast-deep-equal" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/fast-json-stable-stringify" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/follow-redirects" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/forever-agent" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/form-data" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/getpass" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/har-schema" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/har-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/http-signature" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/is-typedarray" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/isstream" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/jsbn" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/json-schema" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/json-schema-traverse" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/json-stringify-safe" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/jsprim" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/lodash" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/mime-db" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/mime-types" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/node-fetch" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/oauth-sign" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/options" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/performance-now" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/psl" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/punycode" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/qs" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/request" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/safe-buffer" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/safer-buffer" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/slackbots" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/sshpk" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/tough-cookie" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/tunnel-agent" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/tweetnacl" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/ultron" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/uri-js" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/verror" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/vow" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/ws-heartbeat" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -4,7 +4,6 @@
   "description": "A simple slackbot that tells hilarious jokes, all vetted by me.",
   "main": "index.js",
   "scripts": {
-    "test": "test",
     "start": "nodemon index.js"
   },
   "repository": {

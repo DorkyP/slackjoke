@@ -46,7 +46,7 @@ function handleMessage(message, channel) {
 
 function randomJoke(channel) {
     console.log("got here")
-    fetch("jokes.json")
+    axios.get("https://raw.githubusercontent.com/DorkyP/slackjoke/main/jokes.json")
         .then(res => {
             const jokes = res.data;
             const random = Math.floor(Math.random() * jokes.length);
@@ -59,16 +59,10 @@ function randomJoke(channel) {
 
             bot.postMessage(
                 channel,
-                `:question: ${question}`,
+                `${question}
+                ${answer} :joy:`,
                 params
             );
-
-            bot.postMessage(
-                channel,
-                `${answer} :joy:`,
-                params
-            );
-
         })
 }
 
